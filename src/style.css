@@ -1,0 +1,1187 @@
+:root {
+    --dark_color: rgb(36, 33, 49);
+    --card_color: rgb(236, 246, 255);
+    --accent-color: rgb(71, 36, 117); 
+    --accent-color2: rgb(181, 178, 250);
+    --title-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --article-font: Tahoma, sans-serif;
+    --box-shadow: 1px 2px 6px rgb(107, 107, 110);
+}
+
+/*---- General Content ---*/
+
+#nj_state_img {
+    width: 150px;
+    float: left;
+    border: solid 8px;
+    margin-right: 40px;
+}
+
+.content-title {
+    font-family: var(--title-font);
+    color: var(--dark_color);
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: var(--article-font);
+    color: var(--dark_color);
+
+}
+
+.title-divider {
+    background-color: var(--dark_color);
+    width: 60%;
+    height: 4px;
+}
+
+.aside {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .8em;
+    margin-top: 5%;
+}
+
+.vertical-spacer {
+    background-color: rgba(255, 255, 255, 0);
+    height: 200px;
+    display: flex;
+}
+
+nav a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.article {
+    color: var(--dark_color);
+    font-family: var(--article-font);
+
+}
+
+.subheader {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*------- Header CSS ------*/
+
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: var(--dark_color);
+    display: flex;
+    z-index: 1;
+    position: relative;
+}
+
+.njLogo {
+    background-image: url("./img/nj_logo.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 90px;
+    width: 90px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.nav-words {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+    display: flex;
+    flex-grow: 3; 
+    justify-content: space-between;
+    align-content: center;
+}
+
+nav span {
+    text-align: center;
+    padding-top: 45px;
+    width: 100%;
+    font-weight: medium;
+    transition: background-color 250ms ease;
+}
+
+nav span:hover {
+    background-color: var(--accent-color);
+}
+
+.nav-menu button {
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url("./img/menu-icon.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.nav-menu {
+    visibility: hidden;
+    position: relative;
+    right: 0;
+    top: 40px;
+    width: min-content;
+}
+
+.nav-cities-menu {
+    justify-content: center;
+    border: 3px solid var(--dark_color);
+    width: 250px;
+    background-color: var(--card_color);
+    color: var(--accent-color);
+    flex-direction: column;
+    position: absolute;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+.nav-cities-menu a {
+    color: var(--accent-color);
+}
+.cities:hover .nav-cities-menu {
+    opacity: 1;
+    transition-delay: .5s;
+}
+
+.nav-cities-menu li:hover {
+    background-color: var(--accent-color);
+}
+
+.nav-cities-menu li:hover a {
+    color: aliceblue;
+}
+
+.hidden {
+    display: none;
+}
+
+.button-nav-menu {
+    background-color: var(--card_color);
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 400px;
+    border: solid 5px var(--dark_color);
+    border-top: none;
+}
+
+.button-menu-list {
+    list-style: none;
+    color: var(--accent-color);
+    text-align: center;
+    padding: 0;
+    margin: 20px;
+}
+.button-menu-list a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--accent-color);
+    font-size: 2em;
+}
+
+.list-subitem a {
+    font-size: 1.5em;
+    font-weight: nor
+}
+
+.button-menu-list li {
+    margin-top: 20px;
+}
+
+.button-menu-list li:hover, .button-menu-list li:hover a {
+    background-color: var(--accent-color);
+    color: aliceblue;
+}
+/*-----Main CSS ------*/ 
+
+
+.web-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    flex-grow: 3;
+    font-weight: bold;
+    font-size: 150%;
+    text-align: left;
+    padding-top: 40px;
+    margin-left: 2%;
+}
+
+.home-main {
+    background-image: url('./img/skyline.jpeg');
+    background-size: auto 130%;
+    background-repeat: no-repeat;
+    height: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 4px 4px 4px rgb(163, 162, 162);
+}
+
+.transparent-box {
+    background-color: rgba(234, 231, 255, 0.651);
+    background-size: 180%;
+    border-radius: 5px;
+    box-shadow: 1px 2px 6px rgb(107, 107, 110);
+    backdrop-filter: blur(3px);
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 60%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-title {
+    height: min-content;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    padding: 0 40px 0 40px;
+    text-shadow: 2px 2px rgb(131, 131, 131);
+}
+
+.main-article {
+    width: 100%;
+    height: min-content;
+    margin: 0;
+    overflow: hidden;
+    color: var(--dark_color);
+    font-family: var(--article-font);
+    font-size: 2vh;
+    padding: 0 80px 0 80px;
+    text-align: center;
+}
+
+
+.learn-more-button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border-radius: 7px;
+    width: 150px;
+    height: 40px;
+    color: aliceblue;
+    background-color: var(--dark_color);
+    text-align: center;
+    margin-bottom: 50px;
+    transition: background-color 150ms ease-out;
+}
+
+.learn-more-button:hover {
+    background-color: var(--accent-color);
+}
+
+/*------ History Section CSS -------------------*/
+
+#home-history {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.history-img {
+    border-radius: 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history-img img {
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 10%;
+}
+
+#history-article {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 60px 0px 60px;
+    align-content: center;
+    gap: 20px;
+    width: 600px;
+}
+
+
+/*------ Explore Section CSS -----------------------*/
+
+#home-explore {
+    background-color: var(--accent-color2);
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.explore-title {
+    font-family: var(--title-font);
+    text-shadow: var(--box-shadow);
+    font-size: 6em;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.explore-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    width: 100%;
+    height: min-content;
+    position: relative;
+}
+
+.card {
+    background-color: var(--card_color);
+    box-shadow: var(--box-shadow);
+    border-radius: 3px;
+    width: 25vw;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img {
+    height: 75%;
+    width: 90%;
+    margin-top: 10%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.card-aside {
+    background: linear-gradient(rgba(255, 255, 255, 0.5) 5%, var(--accent-color));
+    text-shadow: var(--box-shadow);
+    backdrop-filter: blur(4px);
+    text-align: center;
+    font-family: var(--article-font);
+    color: var(--card_color);
+    font-size: 1.5em;
+    width: 90%;
+    height: 100%;
+    padding: 50% 80px 50% 80px;
+    position: absolute;
+    opacity: 0;
+}
+
+.card-aside:hover {
+    animation: fadeIn 350ms ease forwards;
+}
+
+
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    border-radius: 4px;
+    padding-top: 10px;
+    font-family: var(--title-font);
+    color: var(--accent-color);
+    width: 90%;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    margin-top: 10px;
+}
+
+/*-------Join Newsletter ---------*/
+
+#home-join {
+    background-image: url("https://wallpaperaccess.com/full/1969724.jpg");
+    box-shadow: var(--box-shadow);
+    border-radius: 4px;
+    height: 50vh;
+    width: 90vh;
+    position: relative;
+    margin: auto;
+    border-radius: 0 90px;
+}
+
+.join-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: var(--box-shadow);
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+
+.join-article {
+    font-family: var(--article-font);
+    color: var(--accent-color);
+    border-radius: 0 50px;
+    padding: 20px 60px 20px 60px;
+    font-size: 1.2em;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(229, 242, 253, 0.589);
+    box-shadow: var(--box-shadow);
+    backdrop-filter: blur(8px);
+    width: 50%;
+}
+
+.sign-up {
+    font-weight: bold;
+    color: var(--accent-color);
+    font-size: 1.2em;
+    font-family: var(--article-font);
+    position: absolute;
+    border-radius: 6px;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    border: none;
+    transition: background-color 70ms ease;
+}
+
+.sign-up:hover {
+    background-color: var(--dark_color);
+    color: aliceblue;
+}
+
+/* ----------------Footer---------------*/
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color: var(--dark_color);
+}
+
+.footer-list {
+    justify-content: center;
+    list-style-type: none;
+    display: flex;
+    gap: 100px;
+    color: aliceblue;
+    font-family: var(--title-font);
+}
+
+.footer-list li {
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    font-size: 1.5em;
+    margin-top: 40px;
+    display: inline;
+    transition: background-color 150ms;
+}
+
+.footer-list li:hover {
+    background-color: var(--accent-color);
+}
+
+.CTA-statement {
+    text-align: center;
+    color: aliceblue;
+}
+
+footer a {
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+footer ul li a {
+    text-decoration: none;
+}
+
+
+/*---------- Form Page CSS ----------------*/
+
+#form {
+    margin-top: 10%;
+    margin-bottom: 200px;
+    font-family: var(--article-font);
+    color: var(--accent-color);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+}
+
+#form h1 {
+    justify-content: center;
+    align-content: center;
+    font-size: 3em;
+    width: 400px;
+    height: 100px;
+    border: solid 5px;
+}
+#form-box {
+    background-color: var(--accent-color);
+    width: 60vw;
+    height: fit-content;
+    border-radius: 4px;
+}
+
+label {
+    color: aliceblue;
+    font-weight: bold;
+}
+
+input{
+    height: 30px;
+    margin-top: 10px;
+    width: 55%;
+    color: var(--dark_color);
+}
+
+input::placeholder {
+    color: var(--accent-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+textarea::placeholder {
+    color: var(--accent-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+textarea {
+    font-family: var(--article-font);
+    color: var(--dark_color);
+    margin-top: 20px;
+    width: 70%;
+}
+
+.first-name {
+    margin-top: 10%;
+    margin-bottom: 20px;
+}
+
+.last-name {
+    margin-bottom: 20px;
+}
+
+.email {
+    margin-bottom: 10px;
+}
+
+.email input {
+    margin-bottom: 30px;
+}
+
+.submit-button {
+    color: var(--accent-color);
+    font-family: var(--article-font);
+    font-size: .9em;
+    border-radius: 6px;
+    margin-top: 20px;
+    height: 40px;
+    width: 100px;
+    margin-bottom: 100px;
+}
+
+.submit-button:hover {
+    background-color: var(--dark_color);
+    color: aliceblue;
+    transition: background-color 40ms ease-out;
+}
+
+/* -----------CITIES CSS----------*/
+
+#cities-table-of-contents {
+    color: var(--dark_color);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.cities-card {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    background: linear-gradient(to right, var(--dark_color) 50%, var(--accent-color) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    height:100px;
+    color: aliceblue;
+    font-family: var(--title-font);
+    width: 80%;
+    transition: all 180ms ease-out;
+}
+
+.cities-card:hover {
+    background-position: left bottom;
+}
+
+
+/*----------About Page CSS----------------*/
+
+#about-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 150px;
+    margin-top: 10%;
+}
+
+#about-main-title {
+    background-color: var(--dark_color);
+    color: white;
+    border-radius: 4px;
+    box-shadow: var(--box-shadow);
+    font-size: 5em;
+}
+
+#about-subtitle {
+    background-color: var(--accent-color);
+    color: white;
+    width: fit-content;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    justify-content: left;
+    font-size: 3em;
+    font-weight: bold;
+    transform: rotateZ(-15deg);
+    margin-bottom: -80px;
+    margin-left: -90px;
+    border-radius: 60px 0;
+}
+
+#about-main-article {
+    margin: 5% 50px 0 50px;
+    color: var(--dark_color);
+}
+
+#about-weather {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#weather-article-containter {
+    flex: 1;
+    margin-right: 30px;
+    padding-right: 30px;
+    padding-left: 10%; 
+    margin-bottom: 10%;
+    margin-top: auto auto;
+}
+
+#weather-article {
+    margin-top: 20px;
+}
+
+#weather-table {
+    font-size: 1.5em;
+    font-family: var(--article-font);
+    color: var(--dark_color);
+    border: solid 10px var(--accent-color2);
+    width: 50vw;
+    height: 400px;
+    margin-right: 10%;
+    border-radius: 10px;
+}
+
+#weather-table tr,th {
+    background-color: var(--accent-color2);
+    color: var(--accent-color);
+    text-align: center;
+}
+
+#about-affordability {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: var(--accent-color);
+    height: fit-content;
+    color: white;
+    box-shadow: var(--box-shadow);
+}
+
+#about-ranking {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#about-ranking-article {
+    margin: 0px 10% 60px 10%;
+}
+
+#about-ranking-title {
+    font-size: 3.5em;
+}
+
+#about-ranking-article, #about-ranking-title, #about-ranking li {
+    color: aliceblue;
+}
+
+#affordability-ranking-containter {
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 120px;
+    margin-top: 50px;
+    padding: 40px;
+}
+
+#most-affordable-list li, #least-affordable-list li {
+    font-family: var(--article-font);
+    padding: 40px 0px 40px 0px;
+    color: var(--accent-color);
+    font-size: 1.5em;
+}
+
+
+#most-affordable-container, #least-affordable-container {
+    background-color: var(--card_color);
+    color: var(--accent-color2);
+    height: fit-content;
+    width: fit-content;
+    padding: 50px 60px 50px;
+    box-shadow: 0px 5px 6px;
+    border-radius: 4px;
+}
+
+#most-affordable-container .subheader, #least-affordable-container .subheader {
+    font-size: 2em;
+    color: var(--accent-color);
+}
+
+#about-ranking .title-divider, #about-activities .title-divider {
+    margin-bottom: 30px;
+}
+
+#about-ranking .title-divider {
+    background-color: aliceblue;
+    margin-bottom: 30px;
+}
+
+#about-activities {
+    border: solid 25px var(--accent-color);
+}
+
+#activities-main-container {
+    background-color: var(--accent-color);
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#activities-main-container .title-divider {
+    background-color: white;
+}
+
+#activities-main-container article, #activities-main-container .content-title {
+    color: white;
+}
+
+#activities-main-container article {
+    margin-bottom: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#activities-article-container {
+    background-color: var(--accent-color);
+    color: var(--accent-color);
+    padding: 50px;
+    display: flex;
+    gap: 60px;
+}
+
+#about-food-container, #about-nature-container, #about-arts-container {
+    background-color: var(--card_color);
+    font-size: 1.2em;
+    height: fit-content;
+    padding: 0 30px 40px 30px;
+    border-radius: 0px 40px 0px 40px;
+    box-shadow: 8px 15px 1px var(--dark_color);
+    color: var(--accent-color);
+}
+
+
+/*----------- trenton-hackensack-jersey-city CSS  ------- */
+
+.cities-transparent-box {
+    background-color: #ebecfcb0;
+    background-size: 180%;
+    border-radius: 5px;
+    box-shadow: 1px 2px 6px rgb(107, 107, 110);
+    backdrop-filter: blur(3px);
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 60%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.city-history-img {
+    width: 600px;
+    margin: 60px;
+    box-shadow: var(--box-shadow);
+}
+
+.city-history-article-container {
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+
+.city-history-article {
+    width: 600px;
+    padding: 0px 100px 40px 100px;
+}
+
+.city-cost-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-color2);
+    color: white;
+    margin: 0 50px 0 50px;
+    height: fit-content;
+    padding: 20px 0 100px 0;
+    box-shadow: var(--box-shadow);
+    gap: 50px;
+}
+
+.city-cost-article {
+    margin: 0 10% 0 10%;
+}
+
+.city-cost-article .content-title, .city-cost-article p {
+    color: white;
+    text-shadow: 2px 2px 2px rgb(124, 124, 124);
+}
+
+.city-cost-article .title-divider {
+    background-color: white;
+}
+
+.city-cost-aside {
+    color: var(--accent-color);
+    font-size: 14px;
+    border-radius: 4px 100px;
+    box-shadow: 5px 10px 1px var(--accent-color);;
+    background-color: var(--card_color);
+    padding: 40px 60px 40px 60px;
+    height: fit-content;
+    width: 40%;
+}
+
+.city-lifestyle-container {
+    background-color: var(--accent-color);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.city-lifestyle-container .content-title {
+    color: aliceblue;
+    text-shadow: 2px 4px 1px var(--accent-color);
+    font-size: 4em;
+}
+
+.city-lifestyle-container .title-divider {
+    background-color: aliceblue;
+}
+
+.city-lifestyle-container .article {
+    border-radius: 4px;
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.651);
+    backdrop-filter: blur(4px);
+    margin-top: 50px;
+    padding: 80px 10% 80px 10%;
+    margin: 60px 15% 100px 15%;
+    box-shadow: var(--box-shadow);
+
+}
+
+/*--------------------Trenton--------*/
+
+.cities-main-trenton {
+    background-image: url("./img/skyline.jpeg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-size: cover;
+    box-shadow: 4px 4px 4px rgb(163, 162, 162);
+}
+
+#trenton-main .main-article {
+    padding: 0 40px 0 40px;
+}
+
+#trenton-img-1, #trenton-img-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+#trenton-lifestyle-container {
+    background-image: url("https://i0.wp.com/escnj.energy/wp-content/uploads/2018/09/New-Jersey-Trenton-3.jpg?ssl=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*--------------------Jersey City --------*/
+
+.cities-main-JerseyC {
+    background-image: url("https://wallpapercave.com/wp/wp4204199.jpg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-size: cover;
+    box-shadow: 4px 4px 4px rgb(163, 162, 162);
+}
+
+#JerseyC-main .main-article {
+    padding: 0 40px 0 40px;
+}
+
+#JerseyC-img-1, #JerseyC-img-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+#JerseyC-lifestyle-container {
+    background-image: url(https://www.visithudson.org/wp-content/uploads/2019/08/WEH-1024x683.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*--------- Hackensack ------ */
+
+.cities-main-hackensack {
+    background-image: url(https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_2560/s3/2/95439/09_p1638465.jpg);
+    background-size: auto 130%;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-size: cover;
+    box-shadow: 4px 4px 4px rgb(163, 162, 162);
+}
+
+#hackensack-main .main-article {
+    padding: 0 40px 0 40px;
+}
+
+#hackensack-img-1, #hackensack-img-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+#hackensack-lifestyle-container {
+    background-image: url(https://images.getbento.com/accounts/19fcad6c1fd057f294461dacf26ebe27/media/images/32303THE_OCEANAIRE_096.jpg?w=1800&fit=max&auto=compress,format&h=1800);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*-------Media changes and animations--------*/
+
+@keyframes fadeIn {
+    from {opacity: 0; margin-top: 100%;}
+    to {opacity: 1; margin-top: 0%}
+}
+
+@media (max-width: 1450px) {
+    .main-title {
+        font-size: 2.9em;
+    }
+    .main-article {
+        font-size: 20px;
+        padding: 10px 20px 0 20px;
+    }
+    .learn-more-button {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1360px) {
+    .main-title {
+        font-size: 2.5em;
+    }
+    .main-article {
+        font-size: 20px;
+        padding: 10px 30px 0 30px;
+    }
+    .learn-more-button {
+        margin-top: 10px;
+    
+    }
+
+@media (max-width: 1251px) {
+
+    #history-article {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 1170px) {
+    .main-title {
+        font-size: 2em;
+    }
+    .main-article {
+        font-size: 18px;
+        padding: 10px 30px 0 30px;
+    }
+
+}
+
+@media (max-width: 1045px) {
+    #weather-article-containter {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+
+    #weather-table {
+        margin-left: 15%;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .main-article {
+        font-size: 15px;
+        padding: 10px 30px 0 30px;
+    }
+
+    .web-title {
+        position: absolute;
+        top: 0;
+        left: 20%;
+        margin: auto auto;
+    }
+    .nav-words {
+        visibility: hidden;
+    }
+    .nav-menu {
+        visibility: visible;
+        flex-shrink: 1;
+    }
+    
+    #activities-article-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 650px) {
+    .main-title {
+        font-size: 1.5em;
+        margin-top: 15%;
+    }
+    .main-article {
+        font-size: 14px;
+        padding: 10px 30px 0 30px;
+    }
+
+    .njLogo {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 550px) {
+    .web-title {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 450px) {
+    .main-title {
+        font-size: 1em;
+    }
+    .main-article {
+        font-size: 12px;
+        padding: 10px 15px 0 15px;
+    }
+}
+}

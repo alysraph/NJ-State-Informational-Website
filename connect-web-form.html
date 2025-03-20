@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Connect Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <!--Header -->
+        <header>
+            <div class="njLogo"></div>
+            <span class="web-title"><a href="./index.html">STATE OF NEW JERSEY</a></span>
+            <nav class="nav-words">
+                <span class=>
+                    <a href="./about.html">ABOUT</a>
+                </span>
+                <span class="cities">
+                    <a href="./cities.html">CITIES
+                        <ul class="nav-cities-menu">
+                            <li><a href="cities-trenton.html">Trenton</a></li>
+                            <li><a href="cities-jersey-city.html">Jersey City</a></li>
+                            <li><a href="cities-hackensack.html">Hackensack</a></li>
+                        </ul>
+                    </a>
+                </span>
+                <span>
+                    <a href="./connect-web-form.html">CONNECT</a>
+                </span>
+            </nav>
+
+            <nav class="nav-menu">
+                <button class="menu-button"></button>
+                <nav class="button-nav-menu hidden">
+                    <ul class="button-menu-list">
+                        <li class="button-list-item"><a href="about.html">ABOUT</a></li>
+                        <li class="button-list-item"><a href="cities.html">CITIES</a>
+                            <li class="list-subitem"><a href="cities-trenton.html">Trenton</a></li>
+                            <li class="list-subitem"><a href="cities-jersey-city.html">Jersey City</a></li>
+                            <li class="list-subitem"><a href="cities-hackensack.html">Hackensack</a></li>
+                        </li>
+                        <li class="button-list-item"><a href="connect-web-form.html">CONNECT</a></li>
+                    </ul>
+                </nav>
+            </nav>
+        </header>
+
+        <div id="form"> <!---Form -->
+            <h1>Contact Us</h1>
+            <form id="form-box" action="./connect-web-form.html" method="POST">
+                <div class="first-name">
+                    <label for="first-name">First Name</label>
+                    <br>
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name">
+                </div>
+                <div class="last-name">
+                    <label for="last-name">Last Name</label>
+                    <br>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+                </div>
+                <div class="email">
+                    <label for="email-input1">Email Address</label>
+                    <br>
+                    <input type="email" id="email-input1" name="email-address" placeholder="Input email address" oninput="checkEmail()">
+                    <br>
+                    <label for="email-input2">Confirm Email Address</label>
+                    <br>
+                    <input type="email" id="email-input2" name="email-address" placeholder="Input email address" oninput="checkEmail()">
+                    <p id="email-result"></p>
+                </div>
+                <div class="message">
+                    <label for="text-area">Your Comment</label>
+                    <br>
+                    <textarea name="comment" id="comment" rows="10" placeholder="Input your message here"></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" class="submit-button" placeholder="Submit" onclick="checkEmailMatch()"></input>
+                </div>
+            </form>
+        </div>
+        
+        <footer>
+            <ul class="footer-list">
+                <li><a href="index.html">HOME</a></li>  
+                <li><a href="cities.html">CITIES</a></li>
+                <li><a href="connect-web-form.html">CONTACT</a></li>
+            </ul>
+            <p class="CTA-statement">For more information about New Jersey, visit <a href="https://nj.gov/" target="_blank">nj.gov</a>, the official state website.</p>
+        </footer>
+
+    </body>
+</html>
