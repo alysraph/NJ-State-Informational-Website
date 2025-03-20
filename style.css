@@ -82,7 +82,7 @@ header {
 }
 
 .njLogo {
-    background-image: url("./img/nj_logo.png");
+    background-image: url("./src/img/nj_logo.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
     height: 90px;
@@ -218,7 +218,7 @@ nav span:hover {
 }
 
 .home-main {
-    background-image: url('./img/skyline.jpeg');
+    background-image: url('./src/img/skyline.jpeg');
     background-size: auto 130%;
     background-repeat: no-repeat;
     height: 900px;
@@ -961,7 +961,7 @@ textarea {
 /*--------------------Trenton--------*/
 
 .cities-main-trenton {
-    background-image: url("./img/skyline.jpeg");
+    background-image: url("./src/img/skyline.jpeg");
     object-fit: cover;
     background-repeat: no-repeat;
     height: 800px;
